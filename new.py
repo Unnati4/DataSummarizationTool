@@ -15,7 +15,7 @@ option = st.sidebar.selectbox(
     ('Data Visualisation', 'Analysis', 'Exit')
 )
 
-# Read CSV/Excel file
+# Read CSV file
 file = st.file_uploader("Upload a CSV", type=["csv"])
 if file is not None:
     # Check if the file is a CSV or Excel file and read accordingly
@@ -24,7 +24,7 @@ if file is not None:
     # elif file.type == "xlsx":
     #     df = pd.read_excel(file)
     else:
-        st.error("Unsupported file type. Please upload a CSV or Excel file.")
+        st.error("Unsupported file type. Please upload a CSV file.")
     
     # Display the file name and type
     st.write(f"File name: {file.name}")
