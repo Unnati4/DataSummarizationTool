@@ -122,9 +122,7 @@ elif option == 'Analysis':
 
 elif option == 'Exit':
     st.write('Exiting the application.')
-
-# Check if the logout button was pressed
-# import webbrowser
+    st.page_link("https://datavizsumtool.netlify.app/", label="Open New Window")
 
 
-st.page_link("https://datavizsumtool.netlify.app/", label="LogOut", icon="🏠")
+
